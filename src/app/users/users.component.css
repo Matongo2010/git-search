@@ -1,0 +1,33 @@
+h4{
+  text-align: center;
+  color:gold;
+}
+.card{
+  align-self: right;
+}
+li{
+  list-style: none;
+}
+.row{
+  display: flex;
+  text-align: center;
+  display: inline-flex;
+}
+.log{
+  margin-left:2px;
+}
+.talk{
+  align-self: right;
+  margin-left:250px; 
+}
+.ul1{
+  list-style: none;
+}
+
+
+.button{
+  margin-top: 4px; 
+  padding: 15px;
+  border-radius: 8px;
+  border: none; 
+} 

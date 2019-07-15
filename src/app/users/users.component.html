@@ -1,0 +1,46 @@
+
+<h4 style="color:black"><small></small></h4>
+<hr>
+<div class="container">
+  <section class="on">
+    <form #inputForm='ngForm' >
+    <div class="input panel-heading">
+      <label for="Name"></label>
+      <input class="form-control" type="text" name="Name" id="name" placeholder="Enter Name" [(ngModel)]="username"
+        name="name" #name="ngModel" (keyup)="userName()">
+      <button (click)="userName()" class="button btn-success" name="search" [disabled]="!inputForm.form.valid">Search</button>
+    </div>
+  </form>
+  </section>
+  <!-- <p class="log"> {{user.login}}</p> -->
+
+  <div class="panel-heading"></div>
+
+  <div *ngIf="user">
+    <div class="panel panel-default">
+
+
+      <img class="image" src="{{user.avatar_url}}" alt="">
+      <div class="card">
+
+
+        <ul>
+          <li>{{user.followers}} Followers</li>
+          <li>{{user.following}} People Following</li>
+          <li>{{user.public_repos}} number of repos</li>
+        </ul>
+        <div class=" container-flex card talk">
+          <h1 class="">public Repositories</h1>
+
+          http://localhost:4200/     <div *ngFor="let repo of repos">
+            <hr>
+            <ul>
+              <li><strong><a href="{{repo.html_url}}">{{repo.name}}</a></strong></li>
+              <p><small>^Click me to see my contents^</small></p>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
