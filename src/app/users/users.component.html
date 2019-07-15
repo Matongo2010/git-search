@@ -8,13 +8,21 @@
       <label for="Name"></label>
       <input class="form-control" type="text" name="Name" id="name" placeholder="Enter Name" [(ngModel)]="username"
         name="name" #name="ngModel" (keyup)="userName()">
-        <button (click)="userName()" class="button btn-success" name="search" [disabled]="!inputForm.form.valid">Search</button>
+      <button (click)="userName()" class="button btn-success" name="search" [disabled]="!inputForm.form.valid">Search</button>
     </div>
   </form>
   </section>
 
+  <div class="panel-heading"></div>
+
   <div *ngIf="user">
-    
+    <div class="panel panel-default">
+
+
+      <img class="image" src="{{user.avatar_url}}" alt="">
+      <div class="card">
+
+
         <ul>
           <li>{{user.followers}} Followers</li>
           <li>{{user.following}} People Following</li>
