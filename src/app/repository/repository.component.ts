@@ -8,6 +8,7 @@ import { Observable } from 'rxjs';
   templateUrl: './repository.component.html',
   styleUrls: ['./repository.component.css']
 })
+
 export class RepositoryComponent implements OnInit {
   repos: any;
 
