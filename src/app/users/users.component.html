@@ -12,7 +12,6 @@
     </div>
   </form>
   </section>
-  <!-- <p class="log"> {{user.login}}</p> -->
 
   <div class="panel-heading"></div>
 
@@ -30,13 +29,11 @@
           <li>{{user.public_repos}} number of repos</li>
         </ul>
         <div class=" container-flex card talk">
-          <h1 class="">public Repositories</h1>
 
           http://localhost:4200/     <div *ngFor="let repo of repos">
             <hr>
             <ul>
               <li><strong><a href="{{repo.html_url}}">{{repo.name}}</a></strong></li>
-              <p><small>^Click me to see my contents^</small></p>
             </ul>
           </div>
         </div>
