@@ -28,6 +28,16 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
+    });
+
+    this.usersService.getuserRepos().subscribe(repos => {
+      console.log(repos)
+      this.repos = repos;
+    });
+
+    this.usersService.getuserRepos().subscribe(repos => {
+      console.log(repos)
+      this.repos = repos;
 Run `ng test` to execute the unit tests via (https://Matongo2010.github.io).
 
 ## Running end-to-end tests
