@@ -37,4 +37,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 For further info on the above or if any problems arrise contact me on--
-akamau41@gmail.com
+justineadriano638@gmail.com
